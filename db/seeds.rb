@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user = User.create([
+  {
+    username: "marojni", 
+    password: "icecream"
+   }
+])
+
+reviews = Review.create( [
+    {
+        title: "",
+        body: ""
+        user_id: User.first.id
+        trail_id: Trail.first.id
+    }
+])
